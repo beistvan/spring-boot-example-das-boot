@@ -17,7 +17,7 @@ public class ShipwreckController {
 	public List<Shipwreck> list() {
 		return ShipwreckStub.list();
 	}
-	@RequestMapping(value = "shipwrecks/{id}", method = RequestMethod.POST)
+	@RequestMapping(value = "shipwrecks", method = RequestMethod.POST)
 	public Shipwreck create(@RequestBody Shipwreck shipwreck) {
 		return ShipwreckStub.create(shipwreck);
 	}
